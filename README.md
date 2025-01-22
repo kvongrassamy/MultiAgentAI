@@ -25,7 +25,7 @@ Multi Agent Workflow
 - MongoDBAgent - This Agent pulls articles from the Mongo DB that is dependant on the users propmt
 
 - WriterAgent - This agent will take the results from the MongoDBAgent findings and store it into a txt file and have it ready for download
-![ezcv logo](https://github.com/kvongrassamy/MultiAgentAI/mult_agent_graph.png?raw=true)
+![Model](https://github.com/kvongrassamy/MultiAgentAI/blob/main/mult_agent_graph.png)
 
 
 SETUP
