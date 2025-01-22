@@ -55,10 +55,12 @@ export ANTHROPIC_API_KEY="YOUR_ANTHROPIC_API_KEY"
 ```
 
 
--PyMongoDB set up is required:
+- PyMongoDB set up is required:
     - Create a cluster. Create a database named "articles" and a table named "scientific_articles"
     - Create a cluster search atlas index. Instructions how to create one: https://www.mongodb.com/docs/atlas/atlas-vector-search/create-index/#procedure
-        - Example: {
+        - Example: 
+                    ```bash
+                    {
                     "fields": [
                         {
                         "numDimensions": 256,
@@ -68,6 +70,7 @@ export ANTHROPIC_API_KEY="YOUR_ANTHROPIC_API_KEY"
                         }
                     ]
                     }
+                    ```
     - To load the data the script is in dataset_insert.py
 
 Create a .env file and will need the MONGO_URI:
