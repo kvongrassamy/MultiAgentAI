@@ -59,7 +59,7 @@ export ANTHROPIC_API_KEY="YOUR_ANTHROPIC_API_KEY"
     - Create a cluster. Create a database named "articles" and a table named "scientific_articles"
     - Create a cluster search atlas index. Instructions how to create one: https://www.mongodb.com/docs/atlas/atlas-vector-search/create-index/#procedure
         - Example: 
-                    ```bash
+                    ```json
                     {
                     "fields": [
                         {
@@ -73,10 +73,11 @@ export ANTHROPIC_API_KEY="YOUR_ANTHROPIC_API_KEY"
                     ```
     - To load the data the script is in dataset_insert.py
 
-Create a .env file and will need the MONGO_URI:
-- MONGO_URI="YOUR MONGO URI CONNECTION STRING"
+- Create a .env file and will need the MONGO_URI:
+    - MONGO_URI="YOUR MONGO URI CONNECTION STRING"
 
-- In CMD/GitBash/PS run Parlant with: 
+
+- Run the Streamlit App: 
 ```bash
 streamlit run sl_ome.py
 ```
